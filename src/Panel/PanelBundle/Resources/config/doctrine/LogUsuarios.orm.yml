@@ -1,0 +1,46 @@
+Panel\PanelBundle\Entity\LogUsuarios:
+    type: entity
+    table: log_usuarios
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        idUsuario:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_usuario
+        fechaInicioSesion:
+            type: datetime
+            nullable: true
+            column: fecha_inicio_sesion
+        fechaFinSesion:
+            type: datetime
+            nullable: true
+            column: fecha_fin_sesion
+        lugarAcceso:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: lugar_acceso
+        direccionIp:
+            type: string
+            length: 40
+            fixed: false
+            nullable: true
+            column: direccion_ip
+        navegador:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        estado:
+            type: integer
+            unsigned: false
+            nullable: true
+    lifecycleCallbacks: {  }

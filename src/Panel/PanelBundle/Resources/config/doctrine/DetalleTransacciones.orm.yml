@@ -1,0 +1,85 @@
+Panel\PanelBundle\Entity\DetalleTransacciones:
+    type: entity
+    table: detalle_transacciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        detCliente:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: det_cliente
+        cedula:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        nombres:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        apellidos:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        compania:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        direccion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        telefono:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        fax:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        pais:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        ciudad:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        estado:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        codigoArea:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: codigo_area
+        pago:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        emaild:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

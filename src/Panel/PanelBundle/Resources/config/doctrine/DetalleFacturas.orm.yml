@@ -1,0 +1,31 @@
+Panel\PanelBundle\Entity\DetalleFacturas:
+    type: entity
+    table: detalle_facturas
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idFactura:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_factura
+        cantidad:
+            type: integer
+            unsigned: false
+            nullable: true
+        valorUnitario:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: valor_unitario
+        subtotal:
+            type: integer
+            unsigned: false
+            nullable: true
+    lifecycleCallbacks: {  }

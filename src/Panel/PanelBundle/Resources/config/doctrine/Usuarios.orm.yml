@@ -1,0 +1,39 @@
+Panel\PanelBundle\Entity\Usuarios:
+    type: entity
+    table: usuarios
+    fields:
+        id:
+            id: true
+            type: string
+            length: 13
+            fixed: true
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 50
+            fixed: true
+            nullable: true
+        apellido:
+            type: string
+            length: 50
+            fixed: true
+            nullable: true
+        tipo:
+            type: string
+            length: 50
+            fixed: true
+            nullable: true
+        login:
+            type: string
+            length: 50
+            fixed: true
+            nullable: true
+        password:
+            type: string
+            length: 50
+            fixed: true
+            nullable: true
+    lifecycleCallbacks: {  }

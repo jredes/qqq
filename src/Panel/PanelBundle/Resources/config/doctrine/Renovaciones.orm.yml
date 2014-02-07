@@ -1,0 +1,36 @@
+Panel\PanelBundle\Entity\Renovaciones:
+    type: entity
+    table: renovaciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        fechai:
+            type: date
+            nullable: false
+        fechaf:
+            type: date
+            nullable: false
+        valor:
+            type: integer
+            unsigned: false
+            nullable: false
+        idEstado:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_estado
+        imagen:
+            type: blob
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+Panel\PanelBundle\Entity\TiposTransacciones:
+    type: entity
+    table: tipos_transacciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        transaccion:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        descripcion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }

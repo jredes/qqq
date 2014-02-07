@@ -1,0 +1,47 @@
+Panel\PanelBundle\Entity\BotonesDonacion:
+    type: entity
+    table: botones_donacion
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        descripcion:
+            type: text
+            nullable: false
+        valor:
+            type: integer
+            unsigned: false
+            nullable: false
+        moneda:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        tax:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        amountBase:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: amount_base
+        pUrlRespuesta:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: p_url_respuesta
+    lifecycleCallbacks: {  }

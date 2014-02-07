@@ -1,0 +1,24 @@
+Panel\PanelBundle\Entity\MediosPago:
+    type: entity
+    table: medios_pago
+    fields:
+        id:
+            id: true
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        nombre:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comision:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

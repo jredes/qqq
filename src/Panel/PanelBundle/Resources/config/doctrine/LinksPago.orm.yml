@@ -1,0 +1,72 @@
+Panel\PanelBundle\Entity\LinksPago:
+    type: entity
+    table: links_pago
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        factura:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        estado:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        descripcion:
+            type: text
+            nullable: false
+        valor:
+            type: integer
+            unsigned: false
+            nullable: false
+        moneda:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        extra1:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        extra2:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        extra3:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        tax:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        amountBase:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: amount_base
+        pEmail:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: p_email
+    lifecycleCallbacks: {  }

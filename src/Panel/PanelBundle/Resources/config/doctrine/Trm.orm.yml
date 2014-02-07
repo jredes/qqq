@@ -1,0 +1,19 @@
+Panel\PanelBundle\Entity\Trm:
+    type: entity
+    table: trm
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        trmActual:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: trm_actual
+    lifecycleCallbacks: {  }

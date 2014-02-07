@@ -1,0 +1,76 @@
+Panel\PanelBundle\Entity\DetalleClientes:
+    type: entity
+    table: detalle_clientes
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        tipocuenta:
+            type: integer
+            unsigned: false
+            nullable: false
+        ncuenta:
+            type: text
+            nullable: false
+        banco:
+            type: integer
+            unsigned: false
+            nullable: false
+        titular:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisionvisa:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisionmaster:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisionamerican:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisiondiners:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisiontransaccion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisionPse:
+            type: float
+            nullable: true
+            column: comision_pse
+        comisionTransaccionPse:
+            type: float
+            nullable: true
+            column: comision_transaccion_pse
+        comisionRetiro:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: comision_retiro
+        saldoCliente:
+            type: float
+            nullable: false
+            column: saldo_cliente
+    lifecycleCallbacks: {  }

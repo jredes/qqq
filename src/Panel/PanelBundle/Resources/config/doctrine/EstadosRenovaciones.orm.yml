@@ -1,0 +1,23 @@
+Panel\PanelBundle\Entity\EstadosRenovaciones:
+    type: entity
+    table: estados_renovaciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        estado:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+        descripcion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }

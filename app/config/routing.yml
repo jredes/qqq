@@ -1,0 +1,4 @@
+panel:
+    resource: "@PanelBundle/Resources/config/routing.yml"
+    prefix:   /
+

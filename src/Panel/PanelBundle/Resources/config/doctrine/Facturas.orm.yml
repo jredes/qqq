@@ -1,0 +1,63 @@
+Panel\PanelBundle\Entity\Facturas:
+    type: entity
+    table: facturas
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        fecha:
+            type: date
+            nullable: true
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_cliente
+        consecutivo:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        concepto:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        total:
+            type: integer
+            unsigned: false
+            nullable: true
+        iva:
+            type: integer
+            unsigned: false
+            nullable: true
+        descuento:
+            type: integer
+            unsigned: false
+            nullable: true
+        idEstado:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_estado
+        valorDescuento:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: valor_descuento
+        totalNeto:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: total_neto
+        observaciones:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }

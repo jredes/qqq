@@ -1,0 +1,161 @@
+Panel\PanelBundle\Entity\Transacciones:
+    type: entity
+    table: transacciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idFactura:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: id_factura
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        fecha:
+            type: datetime
+            nullable: false
+        tarjeta:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        moneda:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        dolares:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        valortotal:
+            type: float
+            nullable: false
+        valorneto:
+            type: float
+            nullable: false
+        ivaCliente:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: iva_cliente
+        baseIvaCliente:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: base_iva_cliente
+        comisionBanco:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: comision_banco
+        comisionTarjeta:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: comision_tarjeta
+        ivaComisionTarjeta:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: iva_comision_tarjeta
+        retefuente:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comisionTransaccion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: comision_transaccion
+        ivaTransaccion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: iva_transaccion
+        ivaLineapagos:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: iva_lineapagos
+        gananciaLineapagos:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: ganancia_lineapagos
+        gananciaCliente:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: ganancia_cliente
+        estado:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        franquicia:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        nombreBanco:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: nombre_banco
+        respuesta:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        autorizacion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        recibo:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        descripcionProducto:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: descripcion_producto
+        ipTransaccion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: ip_transaccion
+        codRespuesta:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: cod_respuesta
+    lifecycleCallbacks: {  }

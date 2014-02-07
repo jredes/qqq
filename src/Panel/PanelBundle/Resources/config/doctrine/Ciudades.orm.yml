@@ -1,0 +1,24 @@
+Panel\PanelBundle\Entity\Ciudades:
+    type: entity
+    table: ciudades
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        codigoPais:
+            type: string
+            length: 2
+            fixed: false
+            nullable: false
+            column: codigo_pais
+        nombreCiudad:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: nombre_ciudad
+    lifecycleCallbacks: {  }

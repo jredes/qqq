@@ -1,0 +1,23 @@
+Panel\PanelBundle\Entity\Paises:
+    type: entity
+    table: paises
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+        codigoPais:
+            id: true
+            type: string
+            length: 3
+            fixed: false
+            nullable: false
+            column: codigo_pais
+        nombrePais:
+            type: string
+            length: 60
+            fixed: false
+            nullable: false
+            column: nombre_pais
+    lifecycleCallbacks: {  }

@@ -1,0 +1,53 @@
+Panel\PanelBundle\Entity\ContactosClientes:
+    type: entity
+    table: contactos_clientes
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_cliente
+        documento:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+        nombre:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+        email:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        telefono:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        ext:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+        celular:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+        tipoContacto:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+            column: tipo_contacto
+    lifecycleCallbacks: {  }

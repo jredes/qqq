@@ -1,0 +1,37 @@
+Panel\PanelBundle\Entity\RetirosTransacciones:
+    type: entity
+    table: retiros_transacciones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        idTransaccion:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_transaccion
+        idRetiro:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_retiro
+        gananciaCliente:
+            type: float
+            nullable: true
+            column: ganancia_cliente
+        dineroRetirado:
+            type: float
+            nullable: true
+            column: dinero_retirado
+        saldo:
+            type: float
+            nullable: true
+        estado:
+            type: integer
+            unsigned: false
+            nullable: true
+    lifecycleCallbacks: {  }

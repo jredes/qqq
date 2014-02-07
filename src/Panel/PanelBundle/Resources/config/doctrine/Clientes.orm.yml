@@ -1,0 +1,111 @@
+Panel\PanelBundle\Entity\Clientes:
+    type: entity
+    table: clientes
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        keyCli:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: key_cli
+        idRegimen:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_regimen
+        documento:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+        nombre:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        idPais:
+            type: string
+            length: 5
+            fixed: true
+            nullable: true
+            column: id_pais
+        idCiudad:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_ciudad
+        email:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        contrasena:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        telefono:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+        celular:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+        direccion:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        pagweb:
+            type: string
+            length: 60
+            fixed: false
+            nullable: true
+        servicio:
+            type: text
+            nullable: true
+        actividad:
+            type: text
+            nullable: true
+        idPlan:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_plan
+        idEstado:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: id_estado
+        observaciones:
+            type: text
+            nullable: true
+        idReseller:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_reseller
+        reseller:
+            type: string
+            length: 2
+            fixed: true
+            nullable: false
+        logo:
+            type: text
+            nullable: true
+        saldoCliente:
+            type: float
+            nullable: true
+            column: saldo_cliente
+    lifecycleCallbacks: {  }

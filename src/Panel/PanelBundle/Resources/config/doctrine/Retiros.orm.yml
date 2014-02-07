@@ -1,0 +1,56 @@
+Panel\PanelBundle\Entity\Retiros:
+    type: entity
+    table: retiros
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        idCliente:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_cliente
+        fecharetiro:
+            type: datetime
+            nullable: false
+        fechapago:
+            type: datetime
+            nullable: false
+        saldoanterior:
+            type: integer
+            unsigned: false
+            nullable: true
+        dinerosolicitado:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        comision:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        iva:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        saldodisponible:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        saldorestante:
+            type: integer
+            unsigned: false
+            nullable: false
+        estado:
+            type: integer
+            unsigned: false
+            nullable: true
+    lifecycleCallbacks: {  }

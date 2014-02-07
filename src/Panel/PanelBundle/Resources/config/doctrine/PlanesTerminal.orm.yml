@@ -1,0 +1,33 @@
+Panel\PanelBundle\Entity\PlanesTerminal:
+    type: entity
+    table: planes_terminal
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        plan:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+        valorPlan:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: valor_plan
+        cantidadTransacciones:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: cantidad_transacciones
+        valorTransaccionAdicional:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: valor_transaccion_adicional
+    lifecycleCallbacks: {  }

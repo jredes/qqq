@@ -1,0 +1,24 @@
+Panel\PanelBundle\Entity\TiposRespuestas:
+    type: entity
+    table: tipos_respuestas
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: Id
+            generator:
+                strategy: IDENTITY
+        respuestaTipo:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+            column: respuesta_tipo
+        descripcion:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }
